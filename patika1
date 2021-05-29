@@ -1,0 +1,9 @@
+        
+def flattening(argument):
+    newList = []
+    for item in argument:
+        if type(item) != type([]):
+            newList.append(item)
+        else:
+            newList.extend(flattening(item))
+    return newList
