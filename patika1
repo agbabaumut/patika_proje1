@@ -1,4 +1,4 @@
-        
+ #1.soru       
 def flattening(argument):
     newList = []
     for item in argument:
@@ -7,3 +7,22 @@ def flattening(argument):
         else:
             newList.extend(flattening(item))
     return newList
+
+
+
+#2.soru
+def reversing(liste):
+    new_list = []
+    
+    for x in liste:
+        new_list.append(x)
+    for y in new_list:
+        y.reverse()
+    
+    new_list.reverse()
+    
+
+    
+    
+    
+    return new_list
